@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razzan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "AV--OLxuFTiG-cBia",
+        });
+    })();
+    </script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="navbar-logo">Razzan</a>
+            <ul class="navbar-menu">
+                <li><a href="#home" class="navbar-link">Home</a></li>
+                <li><a href="#what-i-offer" class="navbar-link">Offer</a></li>
+                <li><a href="#about" class="navbar-link">About</a></li>
+                <li><a href="#skills" class="navbar-link">Skills</a></li>
+                <li><a href="#portfolio" class="navbar-link">Portfolio</a></li>
+                <li><a href="#contact" class="navbar-link">Contact</a></li>
+            </ul>
+            <button class="navbar-toggle" id="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- Header Section -->
+    <header id="home" class="header">
+        <div class="header-content">
+            <h1 class="title">Step Into My World of Innovation</h1>
+            <p class="subtitle">Let's build something amazing together!</p>
+        </div>
+    </header>
+
+    <!-- What I offer -->
+    <section id="what-i-offer" class="what-i-offer">
+        <div class="container">
+            <h2>What I Offer</h2>
+            <div class="offer-list">
+                <div class="offer-item">
+                    <h3>Web Development</h3>
+                    <p>Building responsive and visually appealing websites that are optimized for all devices.</p>
+                </div>
+                <div class="offer-item">
+                    <h3>Game Development</h3>
+                    <p>Developing engaging games that deliver immersive and seamless player experiences.</p>
+                </div>
+                <div class="offer-item">
+                    <h3>Mobile App Development</h3>
+                    <p>Creating intuitive mobile applications that provide a seamless user experience.</p>
+                </div>
+                <div class="offer-item">
+                    <h3>UI/UX Design</h3>
+                    <p>Designing modern and user-friendly interfaces that enhance user engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="profile-picture">
+                    <img src="Images-Icons\Squ.jpg" alt="Your Name">
+                </div>
+                <div class="about-text">
+                    <h3>Hi, I'm Razzan Mohammed</h3>
+                    <p>I'm a passionate developer with 8 years of experience creating games, websites, and innovative tech solutions. I specialize in bringing ideas to life with creativity and precision. Whether you're looking for a stunning website, an engaging game, or custom software, I'm here to collaborate and deliver exceptional results. I'm available to work with clients worldwide, and I'm excited to help you achieve your vision!</p>
+                    <p>With a strong foundation in programming and a keen eye for design, I aim to build intuitive and scalable solutions that solve real-world problems. I am always eager to learn new technologies and keep up-to-date with industry trends to deliver the best results to my clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <h3>Web</h3>
+                    <p>Frontend</p>
+                    <div class="skill-bar">
+                        <div class="skill-level web"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Game</h3>
+                    <p>Design and Development.</p>
+                    <div class="skill-bar">
+                        <div class="skill-level mobile"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>App</h3>
+                    <p>Design and Development.</p>
+                    <div class="skill-bar">
+                        <div class="skill-level design"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>UI/UX Design</h3>
+                    <p>Designing.</p>
+                    <div class="skill-bar">
+                        <div class="skill-level backend"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="Images-Icons\1.png" alt="Project 1">
+                    <h3>Afe Hets'an</h3>
+                    <p> Afe Hetsan is an upcoming horror game that draws from the rich tapestry of ancient Ethiopian folklore.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Images-Icons\2.png" alt="Project 2">
+                    <h3>Gugut's WEB</h3>
+                    <p>This is the website I’m building for Gugut Studio, highlighting our focus on quality, innovation, and user-friendly design.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Images-Icons\3.png" alt="Project 3">
+                    <h3>My Web</h3>
+                    <p>This is my personal website, highlighting my skills, projects, and journey as a game developer and tech enthusiast.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" id="text" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="button" onclick="sendMail()">Send Message</button>
+            </form>
+            <div class="social-links">
+                <ul>
+                    <li><a href="https://linkedin.com/in/razzan-mohammed-61516a335" target="_blank"><img src="Images-Icons/LinkedIn.png" alt="LinkedIn"></a></li>
+                    <li><a href="https://t.me/R4ZZAN" target="_blank"><img src="Images-Icons/TG.png" alt="Telegram"></a></li>
+                    <li><a href="https://twitter.com/yourprofile" target="_blank"><img src="Images-Icons/X.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <section id="resume" class="resume-section">
+                <h2>Download My Resume</h2>
+                <p>Looking for more details about my experience and skills? Get my resume here:</p>
+                <a href="Resume/resume.pdf" class="download-btn" download>Download Resume</a>
+            </section>
+        </div>
+        <div class="footer-note">
+            <p>&copy; 2024 Razzan Mohammed. Thanks for being awesome!</p>
+        </div>
+    </footer>
+
+
+    <!-- Optional: Scroll to top button -->
+    <a href="#home" class="scroll-to-top">↑</a>
+
+    <script>
+        document.querySelectorAll('.navbar-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
